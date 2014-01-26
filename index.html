@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Xhgui-external : xhgui, xhprof, external, php" />
+    <meta name="description" content="Xhgui-external : xhgui, xhprof, php" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/thbourlove/xhgui-external">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/thbourlove/xhgui-extension">View on GitHub</a>
 
           <h1 id="project_title">Xhgui-external</h1>
-          <h2 id="project_tagline">xhgui, xhprof, external, php</h2>
+          <h2 id="project_tagline">xhgui, xhprof, php</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/thbourlove/xhgui-external/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/thbourlove/xhgui-external/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/thbourlove/xhgui-extension/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/thbourlove/xhgui-extension/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
@@ -34,20 +34,20 @@
         <h2>
 <a name="what" class="anchor" href="#what"><span class="octicon octicon-link"></span></a>What?</h2>
 
-<p>It's a easy external for <a href="https://github.com/perftools/xhgui">xhgui</a>.</p>
+<p>It's an extension for <a href="https://github.com/perftools/xhgui">xhgui</a>.</p>
 
 <h2>
 <a name="how" class="anchor" href="#how"><span class="octicon octicon-link"></span></a>How?</h2>
 
-<div class="highlight highlight-sh"><pre>wget https://raw.github.com/thbourlove/xhgui-external/master/External.php
+<div class="highlight highlight-sh"><pre>wget https://raw.github.com/thbourlove/xhgui-extension/master/Extension.php
 </pre></div>
 
 <p>example</p>
 
 <div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
-<span class="k">require</span> <span class="s2">"External.php"</span><span class="p">;</span>
+<span class="k">require</span> <span class="s2">"Extension.php"</span><span class="p">;</span>
 <span class="nv">$mongo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MongoClient</span><span class="p">();</span>
-<span class="nv">$xhprof</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Thb\Xhgui\External</span><span class="p">(</span><span class="nv">$mongo</span><span class="o">-&gt;</span><span class="na">xhprof</span><span class="p">);</span>
+<span class="nv">$xhprof</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Thb\Xhgui\Extension</span><span class="p">(</span><span class="nv">$mongo</span><span class="o">-&gt;</span><span class="na">xhprof</span><span class="p">);</span>
 <span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">start</span><span class="p">();</span>
 <span class="k">print</span> <span class="mi">1</span><span class="p">;</span>
 <span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
@@ -57,7 +57,7 @@
 <a name="with-composer" class="anchor" href="#with-composer"><span class="octicon octicon-link"></span></a>With Composer</h3>
 
 <div class="highlight highlight-json"><pre><span class="s2">"require-dev"</span><span class="err">:</span> <span class="p">{</span>
-    <span class="nt">"thbourlove/xhgui-external"</span><span class="p">:</span> <span class="s2">"dev-master"</span>
+    <span class="nt">"thbourlove/xhgui-extension"</span><span class="p">:</span> <span class="s2">"dev-master"</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -66,7 +66,7 @@
 <div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">require</span> <span class="s2">"vendor/autoload.php"</span><span class="p">;</span>
 <span class="nv">$mongo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MongoClient</span><span class="p">();</span>
-<span class="nv">$xhprof</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Thb\Xhgui\External</span><span class="p">(</span><span class="nv">$mongo</span><span class="o">-&gt;</span><span class="na">xhprof</span><span class="p">);</span>
+<span class="nv">$xhprof</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Thb\Xhgui\Extension</span><span class="p">(</span><span class="nv">$mongo</span><span class="o">-&gt;</span><span class="na">xhprof</span><span class="p">);</span>
 <span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">start</span><span class="p">();</span>
 <span class="k">print</span> <span class="mi">1</span><span class="p">;</span>
 <span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
@@ -88,7 +88,7 @@
           </script>
           <script type="text/javascript">
             try {
-              var pageTracker = _gat._getTracker("xhgui, xhprof, external, php");
+              var pageTracker = _gat._getTracker("xhgui, xhprof, php");
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
