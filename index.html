@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Xhgui-external : xhgui, xhprof, external, php" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Xhgui-external</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/thbourlove/xhgui-external">View on GitHub</a>
+
+          <h1 id="project_title">Xhgui-external</h1>
+          <h2 id="project_tagline">xhgui, xhprof, external, php</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/thbourlove/xhgui-external/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/thbourlove/xhgui-external/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="what" class="anchor" href="#what"><span class="octicon octicon-link"></span></a>What?</h2>
+
+<p>It's a easy external for <a href="https://github.com/perftools/xhgui">xhgui</a>.</p>
+
+<h2>
+<a name="how" class="anchor" href="#how"><span class="octicon octicon-link"></span></a>How?</h2>
+
+<div class="highlight highlight-sh"><pre>wget https://raw.github.com/thbourlove/xhgui-external/master/External.php
+</pre></div>
+
+<p>example</p>
+
+<div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="k">require</span> <span class="s2">"External.php"</span><span class="p">;</span>
+<span class="nv">$mongo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MongoClient</span><span class="p">();</span>
+<span class="nv">$xhprof</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Thb\Xhgui\External</span><span class="p">(</span><span class="nv">$mongo</span><span class="o">-&gt;</span><span class="na">xhprof</span><span class="p">);</span>
+<span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">start</span><span class="p">();</span>
+<span class="k">print</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
+</pre></div>
+
+<h3>
+<a name="with-composer" class="anchor" href="#with-composer"><span class="octicon octicon-link"></span></a>With Composer</h3>
+
+<div class="highlight highlight-json"><pre><span class="s2">"require-dev"</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">"thbourlove/xhgui-external"</span><span class="p">:</span> <span class="s2">"dev-master"</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>example</p>
+
+<div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="k">require</span> <span class="s2">"vendor/autoload.php"</span><span class="p">;</span>
+<span class="nv">$mongo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MongoClient</span><span class="p">();</span>
+<span class="nv">$xhprof</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Thb\Xhgui\External</span><span class="p">(</span><span class="nv">$mongo</span><span class="o">-&gt;</span><span class="na">xhprof</span><span class="p">);</span>
+<span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">start</span><span class="p">();</span>
+<span class="k">print</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$xhprof</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
+</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Xhgui-external maintained by <a href="https://github.com/thbourlove">thbourlove</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("xhgui, xhprof, external, php");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
