@@ -5,15 +5,15 @@ It's an extension for [xhgui](https://github.com/perftools/xhgui).
 ## How?
 
 ```sh
-wget https://raw.github.com/thbourlove/xhgui-external/master/External.php
+wget https://raw.github.com/thbourlove/xhgui-extension/master/Extension.php
 ```
 
 example
 ```php
 <?php
-require "External.php";
+require "Extension.php";
 $mongo = new MongoClient();
-$xhprof = new \Thb\Xhgui\External($mongo->xhprof);
+$xhprof = new \Thb\Xhgui\Extension($mongo->xhprof);
 $xhprof->start();
 print 1;
 $xhprof->save();
@@ -22,7 +22,7 @@ $xhprof->save();
 ### With Composer
 ```json
 "require-dev": {
-    "thbourlove/xhgui-external": "dev-master"
+    "thbourlove/xhgui-extension": "dev-master"
 }
 ```
 
@@ -31,7 +31,7 @@ example
 <?php
 require "vendor/autoload.php";
 $mongo = new MongoClient();
-$xhprof = new \Thb\Xhgui\External($mongo->xhprof);
+$xhprof = new \Thb\Xhgui\Extension($mongo->xhprof);
 $xhprof->start();
 print 1;
 $xhprof->save();
