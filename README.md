@@ -16,7 +16,7 @@ $mongo = new MongoClient();
 $xhprof = new \Thb\Xhgui\Extension($mongo->xhprof);
 $xhprof->start();
 print 1;
-$xhprof->save();
+$xhprof->save('print');
 ```
 
 ### With Composer
@@ -34,5 +34,5 @@ $mongo = new MongoClient();
 $xhprof = new \Thb\Xhgui\Extension($mongo->xhprof);
 $xhprof->start();
 print 1;
-$xhprof->save();
+$xhprof->save('print');
 ```
