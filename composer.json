@@ -1,0 +1,15 @@
+{
+    "name": "thbourlove/xhgui-external",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "thbourlove",
+            "email": "thbourlove@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Thb\\Xhgui\\": "./"
+        }
+    }
+}
