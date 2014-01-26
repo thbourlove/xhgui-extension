@@ -1,7 +1,7 @@
 <?php
 namespace Thb\Xhgui;
 
-class External
+class Extension
 {
     private $db;
 
