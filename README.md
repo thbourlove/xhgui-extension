@@ -1,6 +1,6 @@
 ## What?
 
-It's a easy external for [xhgui](https://github.com/perftools/xhgui).
+It's an extension for [xhgui](https://github.com/perftools/xhgui).
 
 ## How?
 
