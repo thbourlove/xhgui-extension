@@ -38,7 +38,7 @@ class Extension
             'env' => $_ENV,
             'simple_url' => $url,
             'request_ts' => new \MongoDate($time),
-            'request_ts_micro' => new \MongoDate($microtime),
+            'request_ts_micro' => new \MongoDate($microtime, $microtime - floor($microtime) * 10000),
             'request_date' => date('Y-m-d', $time),
         );
 
